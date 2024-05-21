@@ -1,0 +1,202 @@
+[
+    {
+      "id": "001",
+      "picture": "../src/assets/doll/doll1.jpg",
+      "name": "Barbie Dreamtopia Mermaid Doll",
+      "price": 10.99,
+      "rating": 4.8,
+      "sub_category": "Fantasy",
+      "quantity": 50,
+      "details": "This Barbie mermaid doll features a pastel pink bodice, translucent fin, pink and blue ombre tail with sculpted star details, blue fantasy hair, and a royal tiara."
+    },
+    {
+      "id": "002",
+      "picture": "../src/assets/doll/doll2.jpg",
+      "name": "American Girl Doll Lila Monetti",
+      "price": 110.00,
+      "rating": 4.9,
+      "sub_category": "18-inch Dolls",
+      "quantity": 20,
+      "details": "Lila Monetti, the 2024 Girl of the Year, comes with horse riding accessories and a storybook about her adventures. Includes leotards and gear from GK Elite."
+    },
+    {
+      "id": "003",
+      "picture": "https://ibb.co/NnmR0mP",
+      "name": "Nendoroid Doll Holo",
+      "price": 72.00,
+      "rating": 4.7,
+      "sub_category": "Action Figures",
+      "quantity": 35,
+      "details": "From 'Spice and Wolf,' this Nendoroid Doll includes interchangeable hands, a wheat pouch, and magnetic shoes. Highly articulated and dressed in detailed outfits."
+    },
+    {
+      "id": "004",
+      "picture": "../src/assets/doll/doll1.jpg",
+      "name": "Steiff Collectible Teddy Bear",
+      "price": 300.00,
+      "rating": 4.6,
+      "sub_category": "Collectibles",
+      "quantity": 10,
+      "details": "A high-quality teddy bear made with premium materials, part of the Steiff collector’s showcase. Comes with a certificate of authenticity."
+    },
+    {
+      "id": "005",
+      "picture": "../src/assets/doll/doll2.jpg",
+      "name": "Gotz Doll Emily",
+      "price": 85.00,
+      "rating": 4.8,
+      "sub_category": "Play Dolls",
+      "quantity": 25,
+      "details": "Emily is a beautifully crafted 18-inch doll with rooted hair and lifelike features. She comes dressed in a stylish outfit and shoes."
+    },
+    {
+      "id": "006",
+      "picture": "../src/assets/doll/doll2.jpg",
+      "name": "Charlie Bears Minimo Collection",
+      "price": 150.00,
+      "rating": 4.9,
+      "sub_category": "Limited Editions",
+      "quantity": 15,
+      "details": "Part of the limited-edition Minimo Collection, this bear features intricate detailing and comes with a custom display stand."
+    },
+    {
+      "id": "007",
+      "picture": "../src/assets/doll/doll1.jpg",
+      "name": "Zwergnase Junior Doll",
+      "price": 200.00,
+      "rating": 4.7,
+      "sub_category": "Artist Dolls",
+      "quantity": 12,
+      "details": "Handmade in Germany, this artist doll is highly detailed with hand-painted features and a unique outfit. Limited availability."
+    },
+    {
+      "id": "008",
+      "picture": "../src/assets/doll/doll2.jpg",
+      "name": "Sylvia Natterer Petitcollin Doll",
+      "price": 120.00,
+      "rating": 4.6,
+      "sub_category": "Collectible Dolls",
+      "quantity": 18,
+      "details": "Designed by Sylvia Natterer, this doll is crafted from high-quality vinyl and comes with a detailed wardrobe and accessories."
+    },
+    {
+      "id": "009",
+      "picture": "../src/assets/doll/doll2.jpg",
+      "name": "Mia Dolls Spanish Collection",
+      "price": 90.00,
+      "rating": 4.8,
+      "sub_category": "Full Vinyl Dolls",
+      "quantity": 30,
+      "details": "Full vinyl doll made in Spain, featuring a lifelike appearance and traditional Spanish dress."
+    },
+    {
+      "id": "010",
+      "picture": "../src/assets/doll/doll1.jpg",
+      "name": "Hildegard Gunzel Doll",
+      "price": 450.00,
+      "rating": 4.9,
+      "sub_category": "Artist Dolls",
+      "quantity": 8,
+      "details": "A premium collectible doll from renowned artist Hildegard Gunzel, featuring exquisite detailing and hand-sewn clothing."
+    },
+    {
+      "id": "011",
+      "picture": "../src/assets/doll/doll2.jpg",
+      "name": "Isabelle Bear 2024",
+      "price": 220.00,
+      "rating": 4.8,
+      "sub_category": "Plush Toys",
+      "quantity": 22,
+      "details": "This limited-edition bear from the Isabelle collection features mohair fur and comes with a unique accessory set."
+    },
+    {
+      "id": "012",
+      "picture": "../src/assets/doll/doll2.jpg",
+      "name": "Kaloo Plush Doll",
+      "price": 35.00,
+      "rating": 4.5,
+      "sub_category": "Plush Toys",
+      "quantity": 40,
+      "details": "Soft and cuddly plush doll from Kaloo, perfect for young children. Machine washable and safe for all ages."
+    },
+    {
+      "id": "013",
+      "picture": "../src/assets/doll/doll2.jpg",
+      "name": "Kathe Kruse Baby Doll",
+      "price": 75.00,
+      "rating": 4.7,
+      "sub_category": "Baby Dolls",
+      "quantity": 28,
+      "details": "Handmade baby doll from Kathe Kruse, featuring a soft body and realistic facial features. Suitable for ages 3 and up."
+    },
+    {
+      "id": "014",
+      "picture": "../src/assets/doll/doll2.jpg",
+      "name": "Little Bird Told Me Rocking Horse",
+      "price": 120.00,
+      "rating": 4.9,
+      "sub_category": "Ride-On Toys",
+      "quantity": 12,
+      "details": "A beautifully crafted rocking horse with a soft plush body and sturdy wooden frame. Suitable for toddlers."
+    },
+    {
+      "id": "015",
+      "picture": "../src/assets/doll/doll2.jpg",
+      "name": "Mary Meyer Bunny",
+      "price": 25.00,
+      "rating": 4.7,
+      "sub_category": "Stuffed Animals",
+      "quantity": 50,
+      "details": "Adorable bunny plush toy from Mary Meyer, made with high-quality materials and embroidered details. Perfect for snuggling."
+    },
+    {
+      "id": "016",
+      "picture": "../src/assets/doll/doll2.jpg",
+      "name": "Nataliya Chernikova Doll",
+      "price": 350.00,
+      "rating": 4.8,
+      "sub_category": "Artist Dolls",
+      "quantity": 10,
+      "details": "Exquisite handcrafted doll by Nataliya Chernikova, featuring intricate clothing and lifelike features. Limited edition."
+    },
+    {
+      "id": "017",
+      "picture": "../src/assets/doll/doll2.jpg",
+      "name": "Shiznits Rag Doll",
+      "price": 45.00,
+      "rating": 4.5,
+      "sub_category": "Rag Dolls",
+      "quantity": 35,
+      "details": "Hand-sewn rag doll from Shiznits, made with soft fabrics and embroidered features. Safe for all ages."
+    },
+    {
+      "id": "018",
+      "picture": "../src/assets/doll/doll2.jpg",
+      "name": "Sigikid Plush Bear",
+      "price": 55.00,
+      "rating": 4.6,
+      "sub_category": "Stuffed Animals",
+      "quantity": 40,
+      "details": "Soft and cuddly plush bear from Sigikid, perfect for children of all ages. Made with safe and durable materials."
+    },
+    {
+      "id": "019",
+      "picture": "../src/assets/doll/doll2.jpg",
+      "name": "Alpaca Stuffed Animal",
+      "price": 65.00,
+      "rating": 4.8,
+      "sub_category": "Stuffed Animals",
+      "quantity": 22,
+      "details": "A cute and fluffy alpaca plush toy, perfect for hugging and cuddling. Made from premium materials for extra softness."
+    },
+    {
+        "id": "020",
+        "picture": "../src/assets/doll/doll2.jpg",
+        "name": "Kaloo Plush Doll",
+        "price": 35.00,
+        "rating": 4.3,
+        "sub_category": "Plush Toys",
+        "quantity": 30,
+        "details": "Soft and cuddly plush doll from Kaloo, perfect for young children. Machine washable and safe for all ages."
+      }
+]
