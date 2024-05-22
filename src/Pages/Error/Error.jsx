@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Error = () => {
     return (
       <div className="flex justify-center items-center h-screen">
@@ -7,7 +9,7 @@ const Error = () => {
             alt=""
             className="max-w-full"
           />
-          <button className="btn btn-outline btn-error absolute bottom-8 left-1/2 transform -translate-x-1/2">Go To Home</button>
+          <Link to={'/'} ><button className="btn btn-outline btn-error absolute bottom-8 left-1/2 ">Go To Home</button></Link>
         </div>
       </div>
     );
