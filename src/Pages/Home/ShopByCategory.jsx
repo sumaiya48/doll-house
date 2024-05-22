@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import 'react-tabs/style/react-tabs.css';
 
@@ -6,7 +7,7 @@ const ShopByCategory = () => {
   const [dolls, setDolls] = useState([]);
 
   useEffect(() => {
-    fetch('doll.json')
+    fetch('http://localhost:5000/doll')
       .then(res => res.json())
       .then(data => setDolls(data))
   }, []);
@@ -29,7 +30,7 @@ const ShopByCategory = () => {
           <h2>Stuffed Animals</h2>
           <div className="doll-list md:flex justify-between">
             {filterDollsBySubCategory('Stuffed Animals').map(doll => (
-               <div key={doll.id} className="doll-item">
+               <div key={doll._id} className="doll-item">
                <div className="card w-96 glass my-5 p-4 bg-slate-150 ">
                  <figure><img src={doll.picture} alt={doll.name} /></figure>
                  <div className="card-body">
@@ -37,7 +38,9 @@ const ShopByCategory = () => {
                    <p>Price: ${doll.price}</p>
                    <p>Rating: {doll.rating}</p>
                    <div className="card-actions justify-end">
-                   <button className="btn btn-error">View details</button>
+                   <Link to={`/dolldetails/${doll._id}`} >
+  <button className="btn btn-error">View details</button>
+</Link>
                    </div>
                  </div>
                </div>
@@ -51,7 +54,7 @@ const ShopByCategory = () => {
           <h2>Artist Dolls</h2>
           <div className="doll-list md:flex justify-between">
             {filterDollsBySubCategory('Artist Dolls').map(doll => (
-              <div key={doll.id} className="doll-item">
+              <div key={doll._id} className="doll-item">
                 <div className="card w-96 glass my-5 p-4 bg-slate-150 ">
                   <figure><img src={doll.picture} alt={doll.name} /></figure>
                   <div className="card-body">
@@ -59,7 +62,9 @@ const ShopByCategory = () => {
                     <p>Price: ${doll.price}</p>
                     <p>Rating: {doll.rating}</p>
                     <div className="card-actions justify-end">
-                    <button className="btn btn-error">View details</button>
+                    <Link to={`/dolldetails/${doll._id}`} >
+  <button className="btn btn-error">View details</button>
+</Link>
                     </div>
                   </div>
                 </div>
@@ -73,7 +78,7 @@ const ShopByCategory = () => {
           <h2>Plush Toys</h2>
           <div className="doll-list md:flex justify-between">
             {filterDollsBySubCategory('Plush Toys').map(doll => (
-               <div key={doll.id} className="doll-item">
+               <div key={doll._id} className="doll-item">
                <div className="card w-96 glass my-5 p-4 bg-slate-150 ">
                  <figure><img src={doll.picture} alt={doll.name} /></figure>
                  <div className="card-body">
@@ -81,7 +86,9 @@ const ShopByCategory = () => {
                    <p>Price: ${doll.price}</p>
                    <p>Rating: {doll.rating}</p>
                    <div className="card-actions justify-end">
-                   <button className="btn btn-error">View details</button>
+                   <Link to={`/dolldetails/${doll._id}`} >
+  <button className="btn btn-error">View details</button>
+</Link>
                    </div>
                  </div>
                </div>
