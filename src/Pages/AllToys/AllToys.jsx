@@ -1,4 +1,4 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const AllToys = () => {
@@ -35,20 +35,20 @@ const AllToys = () => {
     };
 
     return (
-        <div>
-            <div className="grid grid-cols-4 gap-4">
+        <div className="p-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {visibleDolls.map((doll, index) => (
                     <div key={index} className="card card-compact bg-base-100 shadow-xl">
-                        <figure><img src={doll.picture} alt="Shoes" /></figure>
+                        <figure><img src={doll.picture} alt={doll.name} className="w-full h-48 object-cover" /></figure>
                         <div className="card-body">
-                            <h2 className="card-title">Toy Name:{doll.name}</h2>
-                            <p>Sub-Category:{doll.sub_category}</p>
-                            <p>Price: {doll.price}</p>
+                            <h2 className="card-title">Toy Name: {doll.name}</h2>
+                            <p>Sub-Category: {doll.sub_category}</p>
+                            <p>Price: ${doll.price}</p>
                             <p>Available Quantity: {doll.quantity}</p>
                             <div className="card-actions justify-end">
-                            <Link to={`/dolldetails/${doll._id}`} >
-  <button className="btn btn-error">View details</button>
-</Link>
+                                <Link to={`/dolldetails/${doll._id}`}>
+                                    <button className="btn btn-error">View details</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -56,7 +56,6 @@ const AllToys = () => {
             </div>
             {(showMore || dolls.length > dollsPerPage) && (
                 <div className="mt-4 text-center">
-                    
                     <button className="btn btn-error" onClick={handleToggle}>
                         {showMore ? "See More" : "See Less"}
                     </button>
