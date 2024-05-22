@@ -7,11 +7,11 @@ const Brands = () => {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 1000, // Adjust the speed of the slider (in milliseconds)
+        speed: 1000,
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay: true, // Enable autoplay
-        autoplaySpeed: 30, // Set autoplay speed (in milliseconds)
+        autoplay: true, 
+        autoplaySpeed: 30, 
         responsive: [
             {
                 breakpoint: 1024,
@@ -45,9 +45,7 @@ const Brands = () => {
                     <div className="card glass my-5 p-4 bg-slate-100">
                         <figure><img src="https://toytime-theme.myshopify.com/cdn/shop/files/Group_141017.png?v=1707910333&width=1500" alt="Car" /></figure>
                     </div>
-                    <div className="card glass my-5 p-4 bg-slate-100">
-                        <figure><img src="https://toytime-theme.myshopify.com/cdn/shop/files/Frame_4_77fb1d17-44f3-4dad-9088-7f0b1a22167e.svg?v=1710412399&width=1500" alt="Car" /></figure>
-                    </div>
+                   
                     <div className="card glass my-5 p-4 bg-slate-100">
                         <figure><img src="https://toytime-theme.myshopify.com/cdn/shop/files/Group_141015_89c3309e-c489-48a2-ba80-e48fbd8d68f1.png?v=1707910333&width=1500" alt="Car" /></figure>
                     </div>

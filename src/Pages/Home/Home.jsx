@@ -10,7 +10,6 @@ const Home = () => {
     return (
         <div className=" bg-slate-100">
             <Banner></Banner>
-            
             <HeroSection></HeroSection>
             <Gallery></Gallery>
             <ShopByCategory></ShopByCategory>
