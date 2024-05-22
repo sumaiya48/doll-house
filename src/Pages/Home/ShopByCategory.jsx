@@ -17,83 +17,74 @@ const ShopByCategory = () => {
   };
 
   return (
-    <div style={{ backgroundImage: `url("https://img.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1716163200&semt=sph")` }}>
-      <h1 className="text-center font-bold text-4xl py-0.5">Shop By Category</h1>
+    <div className="px-4 py-8 md:py-16">
+      <h1 className="text-center font-bold text-4xl py-2">Shop By Category</h1>
       <Tabs>
-        <TabList>
-          <Tab>Stuffed Animals</Tab>
-          <Tab>Artist Dolls</Tab>
-          <Tab>Plush Toys</Tab>
+        <TabList className="flex justify-center space-x-4">
+          <Tab className="text-lg">Stuffed Animals</Tab>
+          <Tab className="text-lg">Artist Dolls</Tab>
+          <Tab className="text-lg">Plush Toys</Tab>
         </TabList>
 
         <TabPanel>
-          <h2>Stuffed Animals</h2>
-          <div className="doll-list md:flex justify-between">
+          <h2 className="text-2xl font-bold mt-8">Stuffed Animals</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filterDollsBySubCategory('Stuffed Animals').map(doll => (
-               <div key={doll._id} className="doll-item">
-               <div className="card w-96 glass my-5 p-4 bg-slate-150 ">
+               <div key={doll._id} className="card glass">
                  <figure><img src={doll.picture} alt={doll.name} /></figure>
                  <div className="card-body">
                    <h2 className="card-title">{doll.name}</h2>
                    <p>Price: ${doll.price}</p>
                    <p>Rating: {doll.rating}</p>
-                   <div className="card-actions justify-end">
-                   <Link to={`/dolldetails/${doll._id}`} >
-  <button className="btn btn-error">View details</button>
-</Link>
+                   <div className="card-actions">
+                     <Link to={`/dolldetails/${doll._id}`} >
+                       <button className="btn btn-error">View details</button>
+                     </Link>
                    </div>
                  </div>
                </div>
-               
-             </div>
             ))}
           </div>
         </TabPanel>
 
         <TabPanel>
-          <h2>Artist Dolls</h2>
-          <div className="doll-list md:flex justify-between">
+          <h2 className="text-2xl font-bold mt-8">Artist Dolls</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filterDollsBySubCategory('Artist Dolls').map(doll => (
-              <div key={doll._id} className="doll-item">
-                <div className="card w-96 glass my-5 p-4 bg-slate-150 ">
-                  <figure><img src={doll.picture} alt={doll.name} /></figure>
-                  <div className="card-body">
-                    <h2 className="card-title">{doll.name}</h2>
-                    <p>Price: ${doll.price}</p>
-                    <p>Rating: {doll.rating}</p>
-                    <div className="card-actions justify-end">
+              <div key={doll._id} className="card glass">
+                <figure><img src={doll.picture} alt={doll.name} /></figure>
+                <div className="card-body">
+                  <h2 className="card-title">{doll.name}</h2>
+                  <p>Price: ${doll.price}</p>
+                  <p>Rating: {doll.rating}</p>
+                  <div className="card-actions">
                     <Link to={`/dolldetails/${doll._id}`} >
-  <button className="btn btn-error">View details</button>
-</Link>
-                    </div>
+                      <button className="btn btn-error">View details</button>
+                    </Link>
                   </div>
                 </div>
-                
               </div>
             ))}
           </div>
         </TabPanel>
 
         <TabPanel>
-          <h2>Plush Toys</h2>
-          <div className="doll-list md:flex justify-between">
+          <h2 className="text-2xl font-bold mt-8">Plush Toys</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filterDollsBySubCategory('Plush Toys').map(doll => (
-               <div key={doll._id} className="doll-item">
-               <div className="card w-96 glass my-5 p-4 bg-slate-150 ">
+               <div key={doll._id} className="card glass">
                  <figure><img src={doll.picture} alt={doll.name} /></figure>
                  <div className="card-body">
                    <h2 className="card-title">{doll.name}</h2>
                    <p>Price: ${doll.price}</p>
                    <p>Rating: {doll.rating}</p>
-                   <div className="card-actions justify-end">
-                   <Link to={`/dolldetails/${doll._id}`} >
-  <button className="btn btn-error">View details</button>
-</Link>
+                   <div className="card-actions">
+                     <Link to={`/dolldetails/${doll._id}`} >
+                       <button className="btn btn-error">View details</button>
+                     </Link>
                    </div>
                  </div>
                </div>
-               
-             </div>
             ))}
           </div>
         </TabPanel>
