@@ -2,7 +2,6 @@ import { useState, useContext } from 'react';
 import axios from 'axios';
 import { AuthContext } from '../../Providers/AuthProvider';
 
-
 const AddToys = () => {
   const { user } = useContext(AuthContext); 
   const [pictureURL, setPictureURL] = useState('');
@@ -20,7 +19,6 @@ const AddToys = () => {
     const newToy = {
       pictureURL,
       name,
-      
       subCategory,
       price: parseFloat(price),
       rating: parseFloat(rating),
@@ -46,12 +44,10 @@ const AddToys = () => {
 
   return (
     <div className="hero min-h-screen bg-base-200">
-        
       <div className="hero-content flex-col lg:flex-row-reverse">
-      
         <div className="card w-full max-w-2xl shadow-2xl bg-base-100">
           <form className="card-body" onSubmit={handleSubmit}>
-            {message && <p>{message}</p>}
+            {message && <p className="text-center text-red-500">{message}</p>}
             <div className="flex flex-wrap -mx-3">
               <div className="w-full lg:w-1/2 px-3">
                 <div className="form-control mb-4">
@@ -106,10 +102,8 @@ const AddToys = () => {
                     required 
                   />
                 </div>
-               
               </div>
               <div className="w-full lg:w-1/2 px-3">
-               
                 <div className="form-control mb-4">
                   <label className="label">
                     <span className="label-text">Rating</span>
