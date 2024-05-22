@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 
-const UpdateToyModal = ({ toy, onClose, onUpdate }) => {
+const UpdateToyModal = ({ isOpen, toy, onClose, onUpdate }) => {
   const [price, setPrice] = useState(toy.price);
   const [quantity, setQuantity] = useState(toy.quantity);
   const [description, setDescription] = useState(toy.description);
@@ -18,17 +17,16 @@ const UpdateToyModal = ({ toy, onClose, onUpdate }) => {
     };
 
     try {
-      const response = await axios.put(`http://localhost:5000/doll/${toy._id}`, updatedToy);
-      onUpdate(response.data);
+      await onUpdate(updatedToy);
     } catch (error) {
-      setMessage('Failed to update toy');
+      setMessage('Failed to update toy: ' + (error.response?.data?.message || error.message));
       console.error('Error updating toy:', error);
     }
   };
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
-      <div className="bg-white p-8 rounded shadow-md w-full max-w-lg">
+    <dialog id="update_toy_modal" className={`modal ${isOpen ? 'modal-open' : ''}`}>
+      <div className="modal-box">
         <h2 className="text-2xl mb-4">Update Toy</h2>
         {message && <p>{message}</p>}
         <form onSubmit={handleUpdate}>
@@ -68,12 +66,12 @@ const UpdateToyModal = ({ toy, onClose, onUpdate }) => {
             />
           </div>
           <div className="form-control mt-6">
-            <button className="btn btn-primary mr-2" type="submit">Update</button>
-            <button className="btn btn-secondary" onClick={onClose}>Cancel</button>
+            <button className="btn btn-error mr-2" type="submit">Update</button>
+            <button className="btn mt-3" onClick={onClose}>Cancel</button>
           </div>
         </form>
       </div>
-    </div>
+    </dialog>
   );
 };
 
