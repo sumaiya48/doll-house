@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         {
             path :'/alltoys',
             element:<AllToys></AllToys>,
-            loader:() => fetch(`https://doll-house-server.onrender.com/`)
+            loader:() => fetch('http://localhost:5000/doll/')
             
         },
         {
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
         {
             path:'/dolldetails/:id',
             element:<DollDetails></DollDetails>,
-            loader:({params}) => fetch(`https://doll-house-server.onrender.com/${params.id}`)
+            loader:({params}) => fetch(`http://localhost:5000/doll/${params.id}`)
           }
           
       ]

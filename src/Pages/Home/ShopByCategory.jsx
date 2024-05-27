@@ -7,7 +7,7 @@ const ShopByCategory = () => {
   const [dolls, setDolls] = useState([]);
 
   useEffect(() => {
-    fetch('https://doll-house-server.onrender.com/')
+    fetch('http://localhost:5000/doll')
       .then(res => res.json())
       .then(data => setDolls(data))
   }, []);

@@ -12,7 +12,7 @@ const AllToys = () => {
     }, []);
 
     const fetchDolls = () => {
-        fetch("https://doll-house-server.onrender.com/")
+        fetch("http://localhost:5000/doll")
             .then(response => response.json())
             .then(data => {
                 setDolls(data);
