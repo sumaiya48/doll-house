@@ -54,7 +54,7 @@ const MyToys = () => {
   const confirmDeleteToy = async () => {
     if (toyToDelete) {
       try {
-        await axios.delete(`http://localhost:5000/doll/${toyToDelete._id}`);
+        await axios.delete(`https://doll-house-server.onrender.com/${toyToDelete._id}`);
         fetchToys();
       } catch (error) {
         console.error('Failed to delete toy:', error.response?.data?.message || error.message);
