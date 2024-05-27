@@ -16,7 +16,7 @@ const MyToys = () => {
 
   const fetchToys = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/doll');
+      const response = await axios.get('https://doll-house-server.onrender.com/');
       setToys(response.data);
     } catch (error) {
       console.error('Failed to fetch toys:', error);
@@ -34,7 +34,7 @@ const MyToys = () => {
 
   const handleModalUpdate = async (updatedToy) => {
     try {
-      await axios.put(`http://localhost:5000/doll/${selectedToy._id}`, updatedToy);
+      await axios.put(`https://doll-house-server.onrender.com/${selectedToy._id}`, updatedToy);
       fetchToys();
       setIsModalOpen(false); // Close the modal after updating
     } catch (error) {
