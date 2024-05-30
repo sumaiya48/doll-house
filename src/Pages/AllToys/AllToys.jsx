@@ -12,7 +12,7 @@ const AllToys = () => {
     }, []);
 
     const fetchDolls = () => {
-        fetch("http://localhost:5000/doll")
+        fetch("https://doll-house-server-chi.vercel.app/doll")
             .then(response => response.json())
             .then(data => {
                 setDolls(data);

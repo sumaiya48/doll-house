@@ -27,7 +27,7 @@ const AddToys = () => {
     };
 
     try {
-      const response = await axios.post('http://localhost:5000/doll', newToy);
+      const response = await axios.post('https://doll-house-server-chi.vercel.app', newToy);
       setMessage('Toy added successfully!');
       // Clear form fields after successful submission
       setPictureURL('');

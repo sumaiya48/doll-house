@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import axios from 'axios';
 import UpdateToyModal from './UpdateToyModal';
 import DeleteConfirmationModal from './DeleteConfirmationModal';
@@ -16,8 +16,9 @@ const MyToys = () => {
 
   const fetchToys = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/doll');
+      const response = await axios.get(`https://doll-house-server-chi.vercel.app/doll`);
       setToys(response.data);
+      console.log(setToys(response.data))
     } catch (error) {
       console.error('Failed to fetch toys:', error);
     }
@@ -34,7 +35,7 @@ const MyToys = () => {
 
   const handleModalUpdate = async (updatedToy) => {
     try {
-      await axios.put(`http://localhost:5000/doll/${selectedToy._id}`, updatedToy);
+      await axios.put(`https://doll-house-server-chi.vercel.app${selectedToy._id}`, updatedToy);
       fetchToys();
       setIsModalOpen(false); // Close the modal after updating
     } catch (error) {
@@ -54,7 +55,7 @@ const MyToys = () => {
   const confirmDeleteToy = async () => {
     if (toyToDelete) {
       try {
-        await axios.delete(`http://localhost:5000/doll/${toyToDelete._id}`);
+        await axios.delete(`https://doll-house-server-chi.vercel.app${toyToDelete._id}`);
         fetchToys();
       } catch (error) {
         console.error('Failed to delete toy:', error.response?.data?.message || error.message);

@@ -7,7 +7,7 @@ const ShopByCategory = () => {
   const [dolls, setDolls] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/doll')
+    fetch(`https://doll-house-server-chi.vercel.app/doll`)
       .then(res => res.json())
       .then(data => setDolls(data))
   }, []);
